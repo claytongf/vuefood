@@ -2,7 +2,11 @@
     <!-- login -->
             <div class="d-flex justify-content-center h-100 my-5">
                 <div class="user_card">
-                    <logo-component></logo-component>
+                    <div class="d-flex justify-content-center">
+                        <div class="brand_logo_container">
+                            <router-link :to="{name: 'home'}"><img src="@/assets/imgs/vue-food.png" class="brand_logo" alt="Logo"></router-link>
+                        </div>
+                    </div>
                     <div class="d-flex justify-content-center form_container">
                         <form>
                             <div class="input-group mb-3">
@@ -32,9 +36,3 @@
             </div>
             <!-- login-->
 </template>
-<script>
-import LogoComponent from '../../layouts/_partials/logo'
-export default {
-    
-}
-</script>
